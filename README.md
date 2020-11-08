@@ -18,4 +18,4 @@
 - [简单聊一聊柯里化和 TypeScript 泛型](https://github.com/hacker0limbo/my-blog/issues/9)
 - [简单聊一聊一个 Dialog 组件的重构](https://github.com/hacker0limbo/my-blog/issues/10)
 - [简单聊一聊一个 BackTop 组件](https://github.com/hacker0limbo/my-blog/issues/11)
-
+- [简单实现一个数组](https://github.com/hacker0limbo/my-blog/issues/12)
