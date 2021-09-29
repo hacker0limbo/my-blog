@@ -8191,6 +8191,14 @@ module.exports = require("assert");
 
 /***/ }),
 
+/***/ 4293:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("buffer");
+
+/***/ }),
+
 /***/ 8614:
 /***/ ((module) => {
 
@@ -8338,6 +8346,7 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(6024);
 const github = __nccwpck_require__(5016);
+const { Buffer } = __nccwpck_require__(4293);
 
 function run() {
   const repoToken = core.getInput('repoToken');
@@ -8389,7 +8398,7 @@ function run() {
               ...config,
               path: 'README.md',
               message: 'feat: update readme through github action',
-              content,
+              content: Buffer.from(content).toString('base64'),
               sha,
             })
             .then((res) => {
@@ -8406,7 +8415,7 @@ function run() {
         .catch((error) => {
           core.setFailed(
             `Failed to get file sha with a status of ${error.status}, error: ${error.response.data.message}`
-          );    
+          );
         });
     })
     .catch((error) => {
