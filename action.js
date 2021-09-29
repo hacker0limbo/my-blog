@@ -1,5 +1,6 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
+const { Buffer } = require('buffer');
 
 function run() {
   const repoToken = core.getInput('repoToken');
@@ -51,7 +52,7 @@ function run() {
               ...config,
               path: 'README.md',
               message: 'feat: update readme through github action',
-              content,
+              content: Buffer.from(content).toString('base64'),
               sha,
             })
             .then((res) => {
@@ -68,7 +69,7 @@ function run() {
         .catch((error) => {
           core.setFailed(
             `Failed to get file sha with a status of ${error.status}, error: ${error.response.data.message}`
-          );    
+          );
         });
     })
     .catch((error) => {
