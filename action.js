@@ -34,28 +34,41 @@ function run() {
         return result;
       }, '# 个人博客\r\n');
 
+      const filePath = { path: 'README.md' };
+
       octokit.rest.repos
-        .createOrUpdateFileContents({
+        .getContent({
           ...config,
-          path: 'README.md',
-          message: 'feat: update readme through github action',
-          content,
-          committer: {
-            name: 'stephen',
-            email: 'stephen.yin@outlook.com',
-          },
-          author: {
-            name: 'stephen',
-            email: 'stephen.yin@outlook.com',
-          }
+          ...filePath,
         })
         .then((res) => {
-          core.info(`Successfully update and commit README.md, commit id: ${res.data.commit.sha}`);
+          // https://swizec.com/blog/using-javascript-to-commit-to-github-codewithswiz-7/
+          // need to get sha before you update a file
+          const { sha } = res.data;
+
+          octokit.rest.repos
+            .createOrUpdateFileContents({
+              ...config,
+              path: 'README.md',
+              message: 'feat: update readme through github action',
+              content,
+              sha,
+            })
+            .then((res) => {
+              core.info(
+                `Successfully update and commit README.md, commit id: ${res.data.commit.sha}`
+              );
+            })
+            .catch((error) => {
+              core.setFailed(
+                `Failed to update README.md with a status of ${error.status}, error: ${error.response.data.message}`
+              );
+            });
         })
         .catch((error) => {
           core.setFailed(
-            `Failed to update README.md with a status of ${error.status}, error: ${error.response.data.message}`
-          );
+            `Failed to get file sha with a status of ${error.status}, error: ${error.response.data.message}`
+          );    
         });
     })
     .catch((error) => {
