@@ -41,9 +41,13 @@ function run() {
           message: 'feat: update readme through github action',
           content,
           committer: {
-            name: 'hacker0limbo',
+            name: 'stephen',
             email: 'stephen.yin@outlook.com',
           },
+          author: {
+            name: 'stephen',
+            email: 'stephen.yin@outlook.com',
+          }
         })
         .then((res) => {
           core.info(`Successfully update and commit README.md, commit id: ${res.data.commit.sha}`);
