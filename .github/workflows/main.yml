@@ -7,9 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: synchronize the blog readme when issue updated
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v2
       - name: Use local sync-readme action
-        uses: ./.github/actions/sync-readme
+        uses: hacker0limbo/my-blog@master
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
