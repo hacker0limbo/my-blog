@@ -1,0 +1,23 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "使用 Github Issue 进行博客整理, 部分博客会同步到[知乎文章](https://www.zhihu.com/people/badlimboer/posts)",
+  "scripts": {
+    "build": "ncc build action.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacker0limbo/my-blog.git"
+  },
+  "keywords": [],
+  "author": "Limboer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hacker0limbo/my-blog/issues"
+  },
+  "homepage": "https://github.com/hacker0limbo/my-blog#readme",
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "@actions/github": "^5.0.0"
+  }
+}

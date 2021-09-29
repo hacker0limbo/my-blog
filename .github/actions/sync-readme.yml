@@ -1,0 +1,9 @@
+name: 'Sync README Action'
+description: 'Action that synchronize readme file'
+inputs:
+  repoToken:
+    description: 'github access token'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

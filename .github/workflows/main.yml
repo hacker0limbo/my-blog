@@ -1,0 +1,15 @@
+name: Synchronize README
+on:
+  issues:
+    types: [opened, edited, deleted]
+jobs:
+  sync-readme:
+    runs-on: ubuntu-latest
+    name: synchronize the blog readme when issue updated
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Use local sync-readme action
+        uses: ./.github/actions/sync-readme
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
