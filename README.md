@@ -1,21 +1,27 @@
-# my-blog
-
-使用 Github Issue 进行博客整理, 部分博客会同步到[知乎文章](https://www.zhihu.com/people/badlimboer/posts)
-
+# 个人博客
 ## 2019
-
-- [第一篇博客: 写博客的经历](https://github.com/hacker0limbo/my-blog/issues/1)
-- [redux 中 dispatch 一个 action 的几种写法](https://github.com/hacker0limbo/my-blog/issues/2)
-- [session 和 cookie 整理](https://github.com/hacker0limbo/my-blog/issues/3)
-- [JavaScript 中高阶函数原生实现](https://github.com/hacker0limbo/my-blog/issues/4)
-- [简单聊一聊闭包](https://github.com/hacker0limbo/my-blog/issues/5)
-- [简单聊一聊 hooks 与闭包](https://github.com/hacker0limbo/my-blog/issues/6)
-
+- [简单聊一聊 hooks 与闭包](https://api.github.com/repos/hacker0limbo/my-blog/issues/6)
+- [简单聊一聊闭包](https://api.github.com/repos/hacker0limbo/my-blog/issues/5)
+- [JavaScript中高阶函数原生实现](https://api.github.com/repos/hacker0limbo/my-blog/issues/4)
+- [session 和 cookie 整理](https://api.github.com/repos/hacker0limbo/my-blog/issues/3)
+- [redux 中 dispatch 一个 action 的几种写法](https://api.github.com/repos/hacker0limbo/my-blog/issues/2)
+- [第一篇博客: 写博客的经历](https://api.github.com/repos/hacker0limbo/my-blog/issues/1)
 ## 2020
-
-- [简单聊一聊浏览器下的 eventloop, 宏任务和微任务](https://github.com/hacker0limbo/my-blog/issues/7)
-- [简单实现一个 HashTable](https://github.com/hacker0limbo/my-blog/issues/8)
-- [简单聊一聊柯里化和 TypeScript 泛型](https://github.com/hacker0limbo/my-blog/issues/9)
-- [简单聊一聊一个 Dialog 组件的重构](https://github.com/hacker0limbo/my-blog/issues/10)
-- [简单聊一聊一个 BackTop 组件](https://github.com/hacker0limbo/my-blog/issues/11)
-- [简单实现一个数组](https://github.com/hacker0limbo/my-blog/issues/12)
+- [简单聊一聊 window resizing 和 reduce](https://api.github.com/repos/hacker0limbo/my-blog/issues/18)
+- [简单用 React+Redux+TypeScript 实现一个 TodoApp (三)](https://api.github.com/repos/hacker0limbo/my-blog/issues/17)
+- [简单聊一聊如何处理 React props 是 null 的情况](https://api.github.com/repos/hacker0limbo/my-blog/issues/16)
+- [简单聊一聊一个前端编辑器的性能优化](https://api.github.com/repos/hacker0limbo/my-blog/issues/15)
+- [简单用 React+Redux+TypeScript 实现一个 TodoApp (二)](https://api.github.com/repos/hacker0limbo/my-blog/issues/14)
+- [简单用 React+Redux+TypeScript 实现一个 TodoApp (一)](https://api.github.com/repos/hacker0limbo/my-blog/issues/13)
+- [简单实现一个数组](https://api.github.com/repos/hacker0limbo/my-blog/issues/12)
+- [简单聊一聊一个 BackTop 组件](https://api.github.com/repos/hacker0limbo/my-blog/issues/11)
+- [简单聊一聊一个 Dialog 组件的重构](https://api.github.com/repos/hacker0limbo/my-blog/issues/10)
+- [简单聊一聊柯里化和 TypeScript 泛型](https://api.github.com/repos/hacker0limbo/my-blog/issues/9)
+- [简单实现一个 HashTable](https://api.github.com/repos/hacker0limbo/my-blog/issues/8)
+- [简单聊一聊浏览器下的 eventloop, 宏任务与微任务](https://api.github.com/repos/hacker0limbo/my-blog/issues/7)
+## 2021
+- [简单实现 React Router v4](https://api.github.com/repos/hacker0limbo/my-blog/issues/23)
+- [简单写一个打字测速 app](https://api.github.com/repos/hacker0limbo/my-blog/issues/22)
+- [简单聊一聊 typescript 中的 noUncheckedIndexedAccess](https://api.github.com/repos/hacker0limbo/my-blog/issues/21)
+- [简单聊一聊 React 和 VSCode Webview (二)](https://api.github.com/repos/hacker0limbo/my-blog/issues/20)
+- [简单聊一聊 React 和 VSCode Webview (一)](https://api.github.com/repos/hacker0limbo/my-blog/issues/19)
