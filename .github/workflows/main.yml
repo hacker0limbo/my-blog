@@ -10,6 +10,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v2
       - name: Use local sync-readme action
-        uses: ./.github/actions/sync-readme
+        uses: hacker0limbo/my-blog
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
