@@ -18,7 +18,7 @@ function run() {
     .then((res) => {
       // { 2019: [{ title: xxx, url: xxx }, {...}], 2020: [...] }
       const issuesByYear = res.data.reduce((result, issue) => {
-        const { created_at, title, url } = issue;
+        const { created_at, title, html_url: url } = issue;
         const year = created_at.slice(0, 4);
 
         if (result.hasOwnProperty(year)) {
