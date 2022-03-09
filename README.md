@@ -27,4 +27,5 @@
 - [简单聊一聊 React 和 VSCode Webview (二)](https://github.com/hacker0limbo/my-blog/issues/20)
 - [简单聊一聊 React 和 VSCode Webview (一)](https://github.com/hacker0limbo/my-blog/issues/19)
 ## 2022
+- [简单实现 useReducer 与 middleware 以及 compose](https://github.com/hacker0limbo/my-blog/issues/26)
 - [简单聊一聊 useEffect](https://github.com/hacker0limbo/my-blog/issues/25)
