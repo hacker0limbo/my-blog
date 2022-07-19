@@ -27,6 +27,8 @@
 - [简单聊一聊 React 和 VSCode Webview (二)](https://github.com/hacker0limbo/my-blog/issues/20)
 - [简单聊一聊 React 和 VSCode Webview (一)](https://github.com/hacker0limbo/my-blog/issues/19)
 ## 2022
+- [简单聊一聊 React, Context 和 Redux 的性能优化](https://github.com/hacker0limbo/my-blog/issues/30)
+- [Bump node-fetch from 2.6.5 to 2.6.7](https://github.com/hacker0limbo/my-blog/pull/29)
 - [简单聊一聊 React, Redux 和 Context 的行为](https://github.com/hacker0limbo/my-blog/issues/28)
 - [简单聊一聊 JavaScript 中的引用](https://github.com/hacker0limbo/my-blog/issues/27)
 - [简单实现 useReducer 与 middleware 以及 compose](https://github.com/hacker0limbo/my-blog/issues/26)
